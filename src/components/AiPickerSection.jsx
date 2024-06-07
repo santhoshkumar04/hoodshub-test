@@ -2,9 +2,9 @@ import { Article, ClipboardText, SquaresFour } from "@phosphor-icons/react";
 import React from "react";
 import AiPickerCard from "./AiPickerCard";
 const picker = [
-  { icon: SquaresFour, label: "Create with AI" },
-  { icon: Article, label: "Start with template" },
-  { icon: ClipboardText, label: "Frome word, pdf, ppt" },
+  { icon: SquaresFour, label: "Create with AI", isActive: false },
+  { icon: Article, label: "Start with template", isActive: true },
+  { icon: ClipboardText, label: "Frome word, pdf, ppt", isActive: false },
 ];
 
 export default function AiPickerSection() {
@@ -15,7 +15,12 @@ export default function AiPickerSection() {
       </p>
       <div className="flex items-center justify-center space-x-8">
         {picker.map((item, i) => (
-          <AiPickerCard key={i} label={item.label} icon={item.icon} />
+          <AiPickerCard
+            key={i}
+            label={item.label}
+            icon={item.icon}
+            isActive={item.isActive}
+          />
         ))}
       </div>
     </section>

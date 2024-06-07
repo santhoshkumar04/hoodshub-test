@@ -15,7 +15,7 @@ const menulist = [
 ];
 
 export default function Aside() {
-  const [isActive, setIsActive] = useState(0);
+  const [isActive, setIsActive] = useState(1);
   return (
     <aside className="bg-primary/10 w-64 sticky top-0 rounded-3xl p-4 flex flex-col justify-between h-[100vh] space-y-4">
       <ul className="">
