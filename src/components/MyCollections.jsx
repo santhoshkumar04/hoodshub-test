@@ -1,4 +1,4 @@
-import { CaretLeft, CaretRight, PlusCircle } from "@phosphor-icons/react";
+import { CaretRight, PlusCircle } from "@phosphor-icons/react";
 import React from "react";
 import Avatar from "./ui/Avatar";
 
@@ -8,7 +8,7 @@ export default function MyCollections() {
       <h2 className="text-xl font-bold">My Collections</h2>
       <div className="bg-white w-full flex items-center rounded-xl p-4 space-x-6">
         {/* <CaretLeft size={38} className="fill-primary" /> */}
-        <div className="gap-14 flex flex-nowrap overflow-x-auto items-center">
+        <div className="gap-14 flex flex-nowrap overflow-x-auto scrollbar-hide touch-pan-right items-center">
           {[...new Array(7)].map(() => (
             <Avatar>
               <PlusCircle size={38} className="fill-primary" />

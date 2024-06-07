@@ -1,18 +1,7 @@
 import React, { useState } from "react";
 import Button from "./ui/Button";
 import { cn } from "../lib/utils";
-
-const menulist = [
-  "Home",
-  "Virtual video",
-  "Templates",
-  "From imports",
-  "Feedback forms",
-  "Analytics",
-  "Saved",
-  "Data Storage",
-  "Forum",
-];
+import { menulist } from "../constants";
 
 export default function Aside({ showMenu }) {
   const [isActive, setIsActive] = useState(1);
