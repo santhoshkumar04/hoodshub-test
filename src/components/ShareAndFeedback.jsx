@@ -21,9 +21,9 @@ export default function ShareAndFeedback() {
   return (
     <StepHeader title="Step 5: Share your feedback">
       <div className="bg-primary/10 grid grid-cols-2 gap-4 h-full items-center rounded-xl p-10">
-        <div className="col-span-1 space-y-4">
+        <div className="lg:col-span-1 col-span-2 space-y-4">
           <h3 className="font-medium text-textBase">Integrations</h3>
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center gap-4">
             {integrations.map((item, i) => (
               <span key={i} className="h-14 w-14 p-3 bg-white rounded-lg">
                 <img alt={item.label} src={item.icon} />
@@ -31,9 +31,9 @@ export default function ShareAndFeedback() {
             ))}
           </div>
         </div>
-        <div className="col-span-1 space-y-4">
+        <div className="lg:col-span-1 col-span-2 space-y-4">
           <h3 className="font-medium text-textBase">Social Sites</h3>
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center gap-4">
             {socialNetworks.map((item, i) => (
               <span key={i} className="h-14 w-14 p-3 bg-white rounded-lg">
                 <img alt={item.label} src={item.icon} />

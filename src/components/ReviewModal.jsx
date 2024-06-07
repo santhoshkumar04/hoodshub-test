@@ -6,7 +6,7 @@ export default function ReviewModal() {
   return (
     <StepHeader title="Step 4: Review the modal">
       <div className="flex flex-col">
-        <div className="mx-auto w-2/3 space-y-4">
+        <div className="mx-auto lg:w-2/3 w-full space-y-4">
           <div className="overflow-hidden rounded-xl aspect-video">
             <iframe
               title="youtube video"

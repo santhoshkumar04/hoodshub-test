@@ -14,10 +14,15 @@ const menulist = [
   "Forum",
 ];
 
-export default function Aside() {
+export default function Aside({ showMenu }) {
   const [isActive, setIsActive] = useState(1);
   return (
-    <aside className="bg-primary/10 w-64 sticky top-0 rounded-3xl p-4 flex flex-col justify-between h-[100vh] space-y-4">
+    <aside
+      className={cn(
+        "overflow-y-scroll overflow-x-hidden w-64 shrink-0 scrollbar-hide bg-primary/10 sticky top-2 rounded-3xl p-4 lg:flex flex-col justify-between h-[91vh] space-y-4",
+        showMenu ? "flex" : "hidden"
+      )}
+    >
       <ul className="">
         {menulist.map((item, i) => (
           <li
@@ -39,12 +44,16 @@ export default function Aside() {
         ))}
       </ul>
       <div className="bg-white relative rounded-2xl p-4 flex ">
-        <div className="w-28">
-          <img alt="upgradeimg" src="" className="absolute" />
+        <div className="min-w-20">
+          <img
+            alt="upgradeimg"
+            src="./images/marketing.png"
+            className="absolute top-0 -left-8 h-36"
+          />
         </div>
-        <div className="text-xs font-bold">
+        <div className="text-[10px] space-y-2 z-[1] pl-1 text-center font-bold flex-col items-center justify-end">
           <span>Upgrade to premium to unlock </span>
-          <span>limitless possibilities</span>
+          <span className="text-primary">limitless possibilities</span>
           <Button size="sm">Upgrade now</Button>
         </div>
       </div>

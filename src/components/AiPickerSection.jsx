@@ -13,7 +13,7 @@ export default function AiPickerSection() {
       <p className="text-center text-base font-medium text-textBase">
         Pick anyone to reach your customers
       </p>
-      <div className="flex items-center justify-center space-x-8">
+      <div className="flex flex-wrap items-center justify-center gap-8">
         {picker.map((item, i) => (
           <AiPickerCard
             key={i}

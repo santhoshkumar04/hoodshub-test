@@ -6,7 +6,7 @@ export default function GeneratedModal() {
   return (
     <StepHeader title="Step 3: Edit the generated modal">
       <div className="grid grid-cols-6 gap-8">
-        <div className="col-span-2 space-y-4 flex flex-col ">
+        <div className="lg:col-span-2 col-span-6 space-y-4 flex flex-col ">
           <div className="bg-primary/10 flex items-center justify-center rounded-xl p-10">
             <div className="bg-white w-36 p-3 space-y-7 rounded-xl">
               <div className="flex items-center justify-center mt-1">
@@ -26,7 +26,7 @@ export default function GeneratedModal() {
             <Button size="sm">Confirm</Button>
           </div>
         </div>
-        <div className="col-span-4 space-y-4 flex flex-col">
+        <div className="lg:col-span-4 col-span-6 space-y-4 flex flex-col">
           <div className="bg-primary/10 flex h-full items-center justify-center rounded-xl p-10">
             <div className="bg-white p-4 text-textMuted rounded-xl">
               <p>Q1: Lorem Ipsum is simply dummy text</p>
